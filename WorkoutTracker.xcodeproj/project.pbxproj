@@ -14,6 +14,16 @@
 		62333EB6290A29520021BED7 /* WorkoutViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62333EB5290A29520021BED7 /* WorkoutViewModel.swift */; };
 		62333EBA290A29AC0021BED7 /* PushupModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62333EB9290A29AC0021BED7 /* PushupModel.swift */; };
 		62333EBC290A33850021BED7 /* AddWorkoutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 62333EBB290A33850021BED7 /* AddWorkoutView.swift */; };
+		628D41ED291246F7004AD386 /* Image+UIImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41EB291246F7004AD386 /* Image+UIImage.swift */; };
+		628D41EE291246F7004AD386 /* String+Url.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41EC291246F7004AD386 /* String+Url.swift */; };
+		628D41F529124754004AD386 /* EditableText.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41F129124753004AD386 /* EditableText.swift */; };
+		628D41F629124754004AD386 /* PushupDateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41F229124753004AD386 /* PushupDateFormatter.swift */; };
+		628D41F729124754004AD386 /* MessageComposeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41F329124753004AD386 /* MessageComposeView.swift */; };
+		628D41F829124754004AD386 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41F429124753004AD386 /* WebView.swift */; };
+		628D41FA291247C6004AD386 /* Array+Identifiable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41F9291247C6004AD386 /* Array+Identifiable.swift */; };
+		628D41FC29124886004AD386 /* PushupsForKyleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41FB29124886004AD386 /* PushupsForKyleView.swift */; };
+		628D41FE2912490A004AD386 /* WorkoutTrackerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41FD2912490A004AD386 /* WorkoutTrackerView.swift */; };
+		628D420029124AC5004AD386 /* PushupTally.swift in Sources */ = {isa = PBXBuildFile; fileRef = 628D41FF29124AC5004AD386 /* PushupTally.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -25,6 +35,16 @@
 		62333EB5290A29520021BED7 /* WorkoutViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutViewModel.swift; sourceTree = "<group>"; };
 		62333EB9290A29AC0021BED7 /* PushupModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupModel.swift; sourceTree = "<group>"; };
 		62333EBB290A33850021BED7 /* AddWorkoutView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddWorkoutView.swift; sourceTree = "<group>"; };
+		628D41EB291246F7004AD386 /* Image+UIImage.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Image+UIImage.swift"; sourceTree = "<group>"; };
+		628D41EC291246F7004AD386 /* String+Url.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Url.swift"; sourceTree = "<group>"; };
+		628D41F129124753004AD386 /* EditableText.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditableText.swift; sourceTree = "<group>"; };
+		628D41F229124753004AD386 /* PushupDateFormatter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushupDateFormatter.swift; sourceTree = "<group>"; };
+		628D41F329124753004AD386 /* MessageComposeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageComposeView.swift; sourceTree = "<group>"; };
+		628D41F429124753004AD386 /* WebView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		628D41F9291247C6004AD386 /* Array+Identifiable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+Identifiable.swift"; sourceTree = "<group>"; };
+		628D41FB29124886004AD386 /* PushupsForKyleView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PushupsForKyleView.swift; sourceTree = "<group>"; };
+		628D41FD2912490A004AD386 /* WorkoutTrackerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WorkoutTrackerView.swift; sourceTree = "<group>"; };
+		628D41FF29124AC5004AD386 /* PushupTally.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PushupTally.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +77,7 @@
 		62333EA3290A26F30021BED7 /* WorkoutTracker */ = {
 			isa = PBXGroup;
 			children = (
+				628D41EA291246D9004AD386 /* Utility */,
 				62333EB3290A27640021BED7 /* Model */,
 				62333EB2290A27580021BED7 /* View */,
 				62333EB4290A276C0021BED7 /* ViewModel */,
@@ -77,9 +98,9 @@
 		62333EB2290A27580021BED7 /* View */ = {
 			isa = PBXGroup;
 			children = (
+				628D41EF29124702004AD386 /* Components */,
 				62333EBD290A3A370021BED7 /* App */,
-				62333EBB290A33850021BED7 /* AddWorkoutView.swift */,
-				62333EA6290A26F30021BED7 /* WorkoutRecordView.swift */,
+				628D41F02912470F004AD386 /* Screens */,
 			);
 			name = View;
 			sourceTree = "<group>";
@@ -88,6 +109,7 @@
 			isa = PBXGroup;
 			children = (
 				62333EB9290A29AC0021BED7 /* PushupModel.swift */,
+				628D41FF29124AC5004AD386 /* PushupTally.swift */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -106,6 +128,38 @@
 				62333EA4290A26F30021BED7 /* WorkoutTrackerApp.swift */,
 			);
 			name = App;
+			sourceTree = "<group>";
+		};
+		628D41EA291246D9004AD386 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				628D41F9291247C6004AD386 /* Array+Identifiable.swift */,
+				628D41F229124753004AD386 /* PushupDateFormatter.swift */,
+				628D41EB291246F7004AD386 /* Image+UIImage.swift */,
+				628D41EC291246F7004AD386 /* String+Url.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
+		628D41EF29124702004AD386 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				628D41F129124753004AD386 /* EditableText.swift */,
+				628D41F329124753004AD386 /* MessageComposeView.swift */,
+				628D41F429124753004AD386 /* WebView.swift */,
+			);
+			name = Components;
+			sourceTree = "<group>";
+		};
+		628D41F02912470F004AD386 /* Screens */ = {
+			isa = PBXGroup;
+			children = (
+				628D41FB29124886004AD386 /* PushupsForKyleView.swift */,
+				62333EBB290A33850021BED7 /* AddWorkoutView.swift */,
+				62333EA6290A26F30021BED7 /* WorkoutRecordView.swift */,
+				628D41FD2912490A004AD386 /* WorkoutTrackerView.swift */,
+			);
+			name = Screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -178,11 +232,21 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				628D41EE291246F7004AD386 /* String+Url.swift in Sources */,
 				62333EA7290A26F30021BED7 /* WorkoutRecordView.swift in Sources */,
 				62333EBC290A33850021BED7 /* AddWorkoutView.swift in Sources */,
+				628D420029124AC5004AD386 /* PushupTally.swift in Sources */,
+				628D41F629124754004AD386 /* PushupDateFormatter.swift in Sources */,
 				62333EB6290A29520021BED7 /* WorkoutViewModel.swift in Sources */,
+				628D41FA291247C6004AD386 /* Array+Identifiable.swift in Sources */,
+				628D41F729124754004AD386 /* MessageComposeView.swift in Sources */,
+				628D41F529124754004AD386 /* EditableText.swift in Sources */,
+				628D41ED291246F7004AD386 /* Image+UIImage.swift in Sources */,
 				62333EBA290A29AC0021BED7 /* PushupModel.swift in Sources */,
 				62333EA5290A26F30021BED7 /* WorkoutTrackerApp.swift in Sources */,
+				628D41FE2912490A004AD386 /* WorkoutTrackerView.swift in Sources */,
+				628D41FC29124886004AD386 /* PushupsForKyleView.swift in Sources */,
+				628D41F829124754004AD386 /* WebView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -10,7 +10,7 @@ import SwiftUI
 struct WorkoutRecordView: View {
     
     @EnvironmentObject var workoutViewModel: WorkoutViewModel
-    
+    @State private var editMode: EditMode = .inactive
     @State private var showAddWorkoutModal = false
     
     var body: some View {
@@ -36,6 +36,7 @@ struct WorkoutRecordView: View {
             .sheet(isPresented: $showAddWorkoutModal) {
                 AddWorkoutView(workoutViewModel: workoutViewModel, showAddWorkoutViewModal: $showAddWorkoutModal)
             }
+            .environment(\.editMode, $editMode)
         }
     }
     var individualWorkoutsBody: some View {
@@ -48,8 +49,16 @@ struct WorkoutRecordView: View {
                         HStack {
                             Text("\(workoutReport.formattedDate)")
                                 .fontWeight(.semibold)
+                                .fontWeight(.semibold)
                             Spacer()
-                            Text("\(workoutReport.count)")
+                            EditableText(text: "\(workoutReport.count)",
+                                         isEditing: editMode.isEditing,
+                                         textAlignment: .trailing
+                            ) { updatedText in
+                                if let count = Int(updatedText) {
+                                    workoutViewModel.update(count, for: workoutReport)
+                                }
+                            }
                         }
                     }
                     .onDelete { indexSet in
@@ -74,6 +83,12 @@ struct WorkoutRecordView: View {
                 Text("Grand total push-ups").fontWeight(.semibold)
                 Spacer()
                 Text("\(workoutViewModel.totalCount)")
+            }
+            HStack {
+                Text("Pushups that count for Kyle")
+                    .fontWeight(.semibold)
+                Spacer()
+                Text("\(workoutViewModel.pushupsThatCount)")
             }
         }
     }
